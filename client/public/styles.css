@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    color: rgb(117, 117, 117);
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+  }
+  .signinform {
+    padding-bottom: 1.8%;
+    position: fixed;
+    top: 18%;
+    left: 27%;
+    height: auto;
+    width: 46%;
+    background-color: white;
+    color: black;
+    align-items: center;
+    text-align: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  .signinform h1 {
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6b6b6b;
+    margin-bottom: 1%;
+  }
+  .signinform hr {
+    margin-left: 47%;
+    margin-bottom: 4%;
+    width: 5%;
+    font-weight: 900;
+    font-weight: bold;
+    color: #6b6b6b;
+  }
+  .inputfield {
+    text-align: left;
+    margin-left: 17.7%;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+  }
+  .inputfield p {
+    font: normal normal normal 12px/27px Lato;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #6b6b6b;
+  }
+  .inputbox {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputbox img {
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    border-right-style: none;
+    height: 50px;
+    padding: 18px 12px 18px 21px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-style: none;
+  }
+  
+  .inputbox input {
+    width: 65%;
+    padding-left: 12px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    height: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left-style: none;
+    margin-left: -7px;
+  }
+  .passmanager {
+    display: flex;
+    flex-direction: row;
+    margin-left: 17.7%;
+    color: #6b6b6b;
+    font-family: "Lato", sans-serif;
+  }
+  .passmanager input {
+    border: 2px solid #dedede;
+    border-radius: 2px;
+  }
+  .passmanager label {
+    font: normal normal normal 12px/27px Lato;
+    font-weight: bold;
+    margin-top: -1.3%;
+    color: #6b6b6b;
+  }
+  .passmanager a {
+    text-decoration: none;
+    text-align: left;
+    font: normal normal normal 12px/27px Lato;
+    font-weight: 900;
+    color: #5061ce;
+    margin-left: 39%;
+    margin-top: -1.3%;
+  }
+  .signin-btn {
+    margin: 2% auto auto 3%;
+    color: white;
+    border-style: none;
+    background: #5061ce 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    height: 50px;
+    width: 61.3%;
+    margin-left: 17.7%;
+    font-weight: bold;
+  }
+  .google-login {
+    display: flex;
+    justify-content: center;
+    margin: 0% auto auto 3%;
+    border-style: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 61.3%;
+    margin-left: -3.7%;
+    font-weight: bold;
+  }
+  .or {
+    margin-left: -2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #6b6b6b;
+    font: bold normal normal 16px/27px Lato;
+  }
+  .bgbottom {
+    text-align: center;
+  }
+  .bgbottom p {
+    margin-top: 420px;
+    position: absolue;
+    font: normal normal normal 12px/44px Lato;
+    letter-spacing: 0px;
+    color: #979797;
+  }
+  
+  .bgtop {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 201px;
+    background-color: #5061ce;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+    opacity: 1;
+    font-family: "Lato", sans-serif;
+  }
+  .head {
+    display: flex;
+    flex-direction: row;
+    padding-top: 32px;
+    margin-left: 37.7%;
+    width: 25%;
+  }
+  .head h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-right: 3%;
+    font-family: "Montserrat", sans-serif;
+  }
+  .head h2 {
+    padding-top: 12px;
+    transform: scaleY(1.8);
+  }
+  .head p {
+    padding-top: 2%;
+    font-size: 15px;
+    padding-left: 3%;
+    line-height: 1.6;
+  }
+
+/* ////////////dashboard styling ///// */
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  /* background-color: #f5ba13; */
+  background-color: #5061ce;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #5061ce;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #5061ce;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+
+  

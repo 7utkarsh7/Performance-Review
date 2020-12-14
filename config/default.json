@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Testuser:1234@cluster0.xinco.mongodb.net/mainDB?retryWrites=true&w=majority",
+    "jwtSecret": "halalouija"
+}
