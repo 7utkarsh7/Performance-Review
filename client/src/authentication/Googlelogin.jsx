@@ -1,19 +1,20 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import GoogleLogin from "react-google-login";
 import { refreshTokenSetup } from "./Refreshtoken";
-
+import {glogin} from "../redux/actions/auth"; 
+import {useDispatch} from "react-redux";
 function Googlelogin() {
-  let history = useHistory();
+
+  const dispatch = useDispatch();
+
+
   function responseGoogleSuccess(response) {
-    console.log("login success, user:", response);
-      const {name, email, imageUrl}= response.profileObj;
-      console.log(name,email, imageUrl);
-    history.push("/dashboard");
+    const tokenID = response.tokenId;
+      dispatch(glogin(tokenID));
     refreshTokenSetup(response);
   }
+
   function responseGoogleFailure(response) {
-    // alert("error");
     console.log(response);
   }
   return (

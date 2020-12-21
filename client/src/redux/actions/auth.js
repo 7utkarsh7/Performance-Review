@@ -8,7 +8,9 @@ import {
   AUTH_ERROR,
   LOGIN_SUCCESS,
   LOGIN_FAIL,
-  LOGOUT
+  LOGOUT,
+   GLOGIN_FAIL,
+   GLOGIN_SUCCESS
 } from "./types";
 
 //load User
@@ -84,6 +86,32 @@ export const login = (email, password ) => async (dispatch) => {
     alert(err);//mine
   }
 };
+
+
+
+
+//google login
+export const glogin = tokenID => async (dispatch) => {
+
+const body = {tokenId: tokenID};
+  try {
+    const res = await axios.post("/api/gauth", body);
+   console.log(res,"final res");
+    dispatch({
+      type: GLOGIN_SUCCESS,
+      payload: res.data
+    });
+    dispatch(loadUser());
+  } catch (err) {
+    dispatch({
+      type: GLOGIN_FAIL
+    });
+    console.log("error at actions", err);
+  }
+
+
+}
+
 
 
 

@@ -39,7 +39,7 @@ function Login({login, isAuthenticated}) {
             <p>EMAIL ADDRESS</p>
             <div className="inputbox">
               <img src={mail} alt="" />
-              <h3>|</h3>
+    
               <input
                 type="email"
                 placeholder="|   abc@gmail.com"
@@ -51,8 +51,7 @@ function Login({login, isAuthenticated}) {
           <div className="inputfield">
             <p>PASSWORD</p>
             <div className="inputbox">
-              <img src={key} alt="" />
-              <h3>|</h3>
+              <img src={key} alt="" style={{marginRight:"5.5px"}} />
               <input
                 type="text"
                 placeholder="|   Enter Your Password"

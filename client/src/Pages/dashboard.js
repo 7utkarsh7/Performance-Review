@@ -1,6 +1,4 @@
 import React from "react";
-import {Redirect} from "react-router-dom";
- // import Googlelogout from "../authentication/Googlelogout";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import Header from "../components/layout/Header";
@@ -10,19 +8,12 @@ import CreateArea from "../components/layout/CreateArea";
 
 
 
-function Dashboard({notes,  auth:{ isAuthenticated}}) {
+function Dashboard({notes, auth: loading}) {
 
-  
-  if(!isAuthenticated){
-    return <Redirect to="/login" />
-    }
-  
-    
   
     return (
       <div>
         <Header />
-        
         <CreateArea />
         {notes.map((note, index) => {
           return (
@@ -39,7 +30,7 @@ function Dashboard({notes,  auth:{ isAuthenticated}}) {
     );
     
    
-    //   <Googlelogout />
+  
     
 }
 

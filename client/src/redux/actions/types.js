@@ -11,4 +11,5 @@ export const  NOTE_LOADED = "NOTE_LOADED";
 export const  NOTELOAD_ERROR = "NOTELOAD_ERROR";
 export const  DELETE_NOTE = "DELETE_NOTE";
 export const DELETING_NOTE_FAIL = "DELETING_NOTE_FAIL";
-
+export const GLOGIN_SUCCESS = "GLOGIN_SUCCESS";
+export const GLOGIN_FAIL = "GLOGIN_FAIL";

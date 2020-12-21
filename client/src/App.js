@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/dashboard";
-// import PrivateRoute from "./Pages/routing/Privateroute";
+import PrivateRoute from "./Pages/routing/Privateroute";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
@@ -26,7 +26,7 @@ const App = () => {
             <Switch>
               <Route exact path="/login" component={Login} />
               <Route exact path="/" component={Register} />
-              <Route path="/dashboard" component={Dashboard} />
+              <PrivateRoute path="/dashboard" component={Dashboard} />
             </Switch>
         
         </div>

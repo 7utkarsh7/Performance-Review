@@ -68,7 +68,7 @@ function Register({ register, isAuthenticated }) {
           <div className="inputfield">
             <p>PASSWORD</p>
             <div className="inputbox">
-              <img src={key} alt="" />
+              <img src={key} alt="" style={{marginRight: "5px"}} />
 
               <input
                 type="password"
